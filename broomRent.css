@@ -113,6 +113,10 @@ nav .nav-links a:hover {
     margin-top: 0.5rem;
 }
 
+article:hover {
+    transform: translateY(-5px);
+}
+
 /* footer */
 footer {
     text-align: center;

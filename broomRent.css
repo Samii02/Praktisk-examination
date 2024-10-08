@@ -84,7 +84,7 @@ nav .nav-links a:hover {
     margin-bottom: 1rem;
 }
 
-.feature-grid {
+.broom-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;

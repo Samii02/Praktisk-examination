@@ -102,6 +102,10 @@ article p {
     margin-top: 0.5rem;
 }
 
+article:hover {
+    transform: translateY(-5px);
+}
+
 /* Footer styles */
 footer {
     text-align: center;

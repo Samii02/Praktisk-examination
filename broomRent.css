@@ -84,6 +84,8 @@ nav .nav-links a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
+    margin: 1rem;
+    gap: 1rem;
 }
 
 .standardBroom1 h2, .standardBroom2 h2 {
@@ -117,7 +119,5 @@ footer {
     .standardBrooms {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-    gap: 1rem;
     }
 }

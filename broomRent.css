@@ -7,15 +7,17 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
 }
 
-/* navbar */
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -53,10 +55,10 @@ nav .nav-links a:hover {
 }
 
 /* hero */
-.hero {
+.premium-broom {
     background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
     color: white;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,60 +66,35 @@ nav .nav-links a:hover {
     padding: 0 1rem;
 }
 
-.hero h1 {
+.Pbroom-content h1 {
     font-size: clamp(2rem, 4vw, 3rem);
 }
 
-.hero p {
+.Pbroom-content p {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     margin: 1rem 0;
 }
 
-/* brooms */
-.brooms {
-    padding: 1rem;
-    text-align: center;
-}
-
-.brooms h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    margin-bottom: 1rem;
-}
-
-.broom-grid {
+.standardBroom1, .standardBroom2 {
+    background: url('https://via.placeholder.com/800x800') no-repeat center center/cover;
+    color: white;
+    height: 40vh;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-.brooms article {
-    background-color: white;
-    padding: clamp(1rem, 2vw, 1.5rem);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.standardBroom1 h2, .standardBroom2 h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
-.brooms img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.standardBroom1 p, .standardBroom2 p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
-.brooms h3 {
-    margin-top: 1rem;
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
-}
-
-.brooms p {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-    margin-top: 0.5rem;
-}
-
-article:hover {
-    transform: translateY(-5px);
-}
-
-/* footer */
+/* Footer styles */
 footer {
     text-align: center;
     padding: 1rem;
@@ -126,7 +103,6 @@ footer {
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-/* media querie for tablets */
 @media (min-width: 768px) {
 
     nav .nav-links {
@@ -138,21 +114,10 @@ footer {
         height: 70vh;
     }
 
-    .broom-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-/* media queries for laptops and larger screens */
-@media (min-width: 1024px) {
-
-    .hero {
-        height: 80vh;
-    }
-
-    .broom-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .standardBrooms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    gap: 1rem;
     }
 }

@@ -54,6 +54,46 @@ nav .nav-links a:hover {
     border-radius: 5px;
 }
 
+/* hero */
+.premium-broom {
+    background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
+    color: white;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.Pbroom-content h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.Pbroom-content p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 1rem 0;
+}
+
+.standardBroom1, .standardBroom2 {
+    background: url('https://via.placeholder.com/800x800') no-repeat center center/cover;
+    color: white;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.standardBroom1 h2, .standardBroom2 h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.standardBroom1 p, .standardBroom2 p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
 /* Footer styles */
 footer {
     text-align: center;
@@ -61,4 +101,23 @@ footer {
     background-color: #333;
     color: white;
     font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+@media (min-width: 768px) {
+
+    nav .nav-links {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .standardBrooms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    gap: 1rem;
+    }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A modern, responsive homepage layout">
-    <title>Quidditch Tickets</title>
+    <title>Broomsticks</title>
     <link rel="stylesheet" href="broomRent.css">
 </head>
 <body>
@@ -12,36 +12,35 @@
     <header>
         <nav aria-label="Main navigation">
             <div class="logo">
-                <img src="https://img.freepik.com/premium-vector/deathly-hallows-symbol-from-harry-potter-book-magic-wand-resurrection-stone-cloak-invisibility-vector_619989-1151.jpg?w=1060" alt="Livelt Hollows logo">
+                <img src="https://img.freepik.com/premium-vector/deathly-hallows-symbol-from-harry-potter-book-magic-wand-resurrection-stone-cloak-invisibility-vector_619989-1151.jpg?w=1060" alt="Lively Hollows logo" title="Lively Hollows">
             </div>
             <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="WandPstore.html">Wands and Potions</a></li>
-                <li><a href="broomRent.html">Rent a Broom</a></li>
-                <li><a href="ticket.html">Tickets to Quidditch</a></li>
+                <li><a href="home.html" title="Go to Home Page">Home</a></li>
+                <li><a href="WandPstore.html" title="Visit Wands and Potions Store">Wands and Potions</a></li>
+                <li><a href="broomRent.html" title="Rent a Broom">Rent a Broom</a></li>
+                <li><a href="ticket.html" title="Purchase Tickets to Quidditch">Tickets to Quidditch</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="premium-broom">
+    <section class="premium-broom" aria-labelledby="firebolt-title">
         <div class="Pbroom-content">
-            <h1>The Fire Bolt</h1>
+            <h1 id="firebolt-title">The Fire Bolt</h1>
             <p>The Firebolt is the fastest broomstick in the wizarding world, offering top speeds and precision control. Perfect for professional Quidditch players and speed enthusiasts.</p>
         </div>
     </section>
 
     <section class="standardBrooms">
-        <section>
+        <section aria-labelledby="nimbus-2000-title">
             <div class="standardBroom1">
-                <h2>Nimbus 2000</h2>
-                <p>The Nimbus 2000 is a sleek, moderate- to high-speed broomstick known for its excellent handling. Perfect for both beginners and pros.
-                </p>
+                <h2 id="nimbus-2000-title">Nimbus 2000</h2>
+                <p>The Nimbus 2000 is a sleek, moderate- to high-speed broomstick known for its excellent handling. Perfect for both beginners and pros.</p>
             </div>
         </section>
-        <section>
+        <section aria-labelledby="nimbus-2000-jr-title">
             <div class="standardBroom2">
-                <h2>Nimbus 2000 Jr</h2>
-                <p>A smaller version of the Nimbus 2000, designed for kids. Flyies at much lower speeds for sefty.</p>
+                <h2 id="nimbus-2000-jr-title">Nimbus 2000 Jr</h2>
+                <p>A smaller version of the Nimbus 2000, designed for kids. Flies at much lower speeds for safety.</p>
             </div>
         </section>
     </section>

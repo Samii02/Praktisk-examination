@@ -73,7 +73,7 @@ nav .nav-links a:hover {
 
 .Pbroom-content p {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
-    margin: 1rem 0;
+    margin: 1rem 6rem;
 }
 
 .standardBroom1, .standardBroom2 {
@@ -86,6 +86,10 @@ nav .nav-links a:hover {
     text-align: center;
     padding: 0 1rem;
     margin: 0.5rem 0;
+}
+
+.standardBroom1 p, .standardBroom2 p {
+    margin: 1rem 5rem;
 }
 
 .standardBroom1 {

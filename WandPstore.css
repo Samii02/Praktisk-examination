@@ -4,18 +4,21 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #301d0ad6;
 }
+
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #301d0af3;
     color: #fff;
     padding: 1rem;
 }
+
 
 /* Navbar */
 nav {
@@ -24,22 +27,19 @@ nav {
     align-items: center;
 }
 
-nav .logo a {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
 
 nav .nav-links {
-    display: flex;
-    flex-direction: column;
+    font-variant: small-caps;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
+
 
 nav .nav-links li {
     list-style: none;
 }
+
 
 nav .nav-links a {
     color: white;
@@ -49,10 +49,20 @@ nav .nav-links a {
     font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
+
 nav .nav-links a:hover {
-    background-color: #555;
+    background-color: #543415c6;
     border-radius: 5px;
 }
+
+
+.logo img {
+    width: clamp(50px, 10vw, 150px);
+    height: auto;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
 
 /* Sections */
 section {
@@ -66,6 +76,7 @@ h2 {
     text-align: center;
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 1rem;
+    color: rgb(223, 223, 223);
 }
 
 /* Wands and Potions styles */
@@ -110,14 +121,17 @@ article:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #301d0af3;
     color: white;
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
+
 /* Media queries for tablets and larger screens */
 @media (min-width: 768px) {
+
     nav .nav-links {
+        display: flex;
         flex-direction: row;
         gap: 2rem;
     }

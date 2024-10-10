@@ -55,6 +55,55 @@ nav .nav-links a:hover {
     margin: 1rem;
 }
 
+/* hero */
+.hero {
+    background: url("https://images.ctfassets.net/usf1vwtuqyxm/6Gzse6POsjfDglvExppFau/045ebd637578a6a22b21d33b39f502a8/golden-snitch_4_1800x1248.png") no-repeat center center/cover;
+    color: white;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 1rem 5.5rem;
+}
+
+button {
+    background-color: #301d0af3;
+    color: rgb(227, 227, 227);
+    padding: 0.5rem;
+    border-radius: 18%;
+}
+
+.quidditch {
+    padding: 2rem;
+    margin: 1.5rem 0;
+}
+
+.quidditch h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+    color: rgb(223, 223, 223);
+}
+
+.quidditch p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    margin-top: 0.5rem;
+    color: rgb(223, 223, 223);
+}
+
+.expect {
+    margin-top: 3rem;
+}
+
 /* Footer styles */
 footer {
     text-align: center;

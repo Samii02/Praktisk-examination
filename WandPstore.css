@@ -147,8 +147,3 @@ footer {
         justify-content: space-evenly;
     }
 }
-
-/* Media queries for laptops and larger screens */
-@media (min-width: 1024px) {
-    
-}

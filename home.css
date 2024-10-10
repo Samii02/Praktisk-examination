@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #301d0ad6;
+}
+
+
+/* Header */
+header {
+    background-color: #301d0af3;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav .nav-links {
+    font-variant: small-caps;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+nav .nav-links li {
+    list-style: none;
+}
+
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+
+nav .nav-links a:hover {
+    background-color: #543415c6;
+    border-radius: 5px;
+}
+
+
+.logo img {
+    width: clamp(50px, 10vw, 150px);
+    height: auto;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+
+/* hero */
+.hero {
+    background: url("https://cdn.80.lv/api/upload/meta/18228/images/61d76ec918136/contain_1200x630.jpg") no-repeat center center/cover;
+    color: white;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 1rem 5.5rem;
+}
+
+/* features */
+.features {
+    padding: 1rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+    color: rgb(223, 223, 223);
+}
+
+.feature-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.features article {
+    background-color: #301d0ad6;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.features img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.features h3 {
+    margin-top: 1rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: rgb(223, 223, 223);
+}
+
+.features p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    margin-top: 0.5rem;
+    color: rgb(223, 223, 223);
+}
+
+/* customer reviews */
+.reviews {
+    color: rgb(223, 223, 223);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.reviews blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.reviews cite {
+    display: block;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #301d0af3;
+    color: white;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+
+/* media querie for tablets */
+@media (min-width: 768px) {
+
+    nav .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .hero {
+        height: 65vh;
+    }
+
+    .feature-grid {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* media queries for laptops and larger screens */
+@media (min-width: 1024px) {
+
+    .hero {
+        height: 75vh;
+    }
+
+    .feature-grid {
+        justify-content: space-between;
+    }
+}

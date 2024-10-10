@@ -7,12 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #301d0ad6;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #301d0af3;
     color: #fff;
     padding: 1rem;
 }
@@ -24,16 +24,10 @@ nav {
     align-items: center;
 }
 
-nav .logo a {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
 nav .nav-links {
-    display: flex;
-    flex-direction: column;
+    font-variant: small-caps;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
@@ -50,13 +44,20 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover {
-    background-color: #555;
+    background-color: #543415c6;
     border-radius: 5px;
+}
+
+.logo img {
+    width: clamp(50px, 10vw, 150px);
+    height: auto;
+    border-radius: 100%;
+    margin: 1rem;
 }
 
 /* hero */
 .premium-broom {
-    background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
+    background: url("https://cinereplicas.com/cdn/shop/products/Firebolt-Broom-HarryPotter-Lifestyle_1-4895205604162.jpg?v=1669346623") no-repeat center center/cover;
     color: white;
     height: 50vh;
     display: flex;
@@ -76,18 +77,24 @@ nav .nav-links a:hover {
 }
 
 .standardBroom1, .standardBroom2 {
-    background: url('https://via.placeholder.com/800x800') no-repeat center center/cover;
     color: white;
     height: 40vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    margin: 1rem;
-    gap: 1rem;
+    margin: 0.5rem 0;
 }
 
+.standardBroom1 {
+    background: url("https://cinereplicas.com/cdn/shop/products/Nimbus2000-HarryPotter-Product-_7.jpg?v=1566467899") no-repeat center center/cover;
+}
+
+.standardBroom2 {
+    background: url("https://cinereplicas.com/cdn/shop/files/Collectible-Nimbus2000Junior-Lifestyle_1-4895205613249.jpg?v=1690275052") no-repeat center center/cover;
+}
 .standardBroom1 h2, .standardBroom2 h2 {
     font-size: clamp(2rem, 4vw, 3rem);
 }
@@ -100,7 +107,7 @@ nav .nav-links a:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #301d0af3;
     color: white;
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
@@ -108,6 +115,7 @@ footer {
 @media (min-width: 768px) {
 
     nav .nav-links {
+        display: flex;
         flex-direction: row;
         gap: 2rem;
     }
@@ -119,5 +127,9 @@ footer {
     .standardBrooms {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    }
+
+    .standardBroom1 {
+        margin-right: 0.5rem;
     }
 }

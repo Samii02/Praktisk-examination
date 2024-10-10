@@ -108,10 +108,11 @@ nav .nav-links a:hover {
     padding: clamp(1rem, 2vw, 1.5rem);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .features img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
 }
@@ -164,6 +165,7 @@ footer {
 @media (min-width: 768px) {
 
     nav .nav-links {
+        display: flex;
         flex-direction: row;
         gap: 2rem;
     }
